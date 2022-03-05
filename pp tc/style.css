@@ -1,0 +1,2510 @@
+html,
+body,
+header,
+footer,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+div {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 320px;
+    height: 100%;
+    background-color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.Disc {
+    list-style: disc;
+}
+
+ul.Disc ul {
+    list-style: circle;
+}
+
+ul.Disc.second li {
+    list-style: circle;
+}
+
+ol.Disc {
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+ul.Blocks li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #0da2cc;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #6ec7e0;
+}
+
+a:hover img {
+    transform: scale(1.01);
+    transition: 0.1s;
+    -webkit-box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 56px 0px rgba(0, 0, 0, 0.1);
+}
+
+a.Arrow {
+    display: inline-block;
+    padding-right: 36px;
+    font-weight: bold;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-image: url("data:image/svg+xml;utf8,<svg width='22' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 7H20M20 7L13.95 1M20 7L13.95 13' stroke='%230DA2CC' stroke-width='2'/></svg>");
+}
+
+a.ArrowLeft {
+    display: inline-block;
+    padding-left: 36px;
+    font-weight: bold;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url("data:image/svg+xml;utf8,<svg width='22' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 7H20M1 7L6 1M1 7L6 13' stroke='%230DA2CC' stroke-width='2'/></svg>");
+}
+
+a.Arrow.Small {
+    padding-right: 36px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='22' height='14' viewBox='0 0 22 14' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 7H20M20 7L13.95 1M20 7L13.95 13' stroke='white' stroke-width='2'/></svg>");
+}
+
+.Clear {
+    clear: both;
+}
+
+.Hide {
+    display: none !important;
+}
+
+.Show {
+    display: block;
+}
+
+.Block,
+.Left,
+.Right {
+    width: 50%;
+    padding: 0 5%;
+}
+
+.Left {
+    float: left;
+}
+
+.Right {
+    float: right;
+}
+
+.Half {
+    width: 50%;
+    padding: 0 10%;
+}
+
+.CenterText {
+    text-align: center;
+}
+
+.Title {
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.Text {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+.SectionList {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.SectionList>li {
+    float: none;
+    display: block;
+}
+
+.SectionImage {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Transition {
+    width: 100%;
+    height: 40px;
+    background-size: 100% 40px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.Transition.DownDarkRed2LightRed {
+    background-color: #e84e40;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H1440V40L0 0Z'    fill='%23BF0C34'/></svg>");
+}
+
+.Transition.UpLightRed2Orange {
+    background-color: #ffb52d;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1440 0H0V40L1440 0Z' fill='%23E84E40'/></svg>");
+}
+
+.Transition.DownOrangeToBlue {
+    background-color: #0da2cc;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H1440V40L0 0Z'    fill='%23FFB52F'/></svg>");
+}
+
+.Transition.UpGreen2White {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1440 0H0V40L1440 0Z' fill='%2387C540'/></svg>");
+}
+
+.Transition.DownDarkRed2White {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0H1440V40L0 0Z'    fill='%23BF0C34'/></svg>");
+}
+
+.Transition.UpBlue2White {
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='40' viewBox='0 0 1440 40' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1440 0H0V40L1440 0Z' fill='%230DA2CC'/></svg>");
+}
+
+.BlueText {
+    color: #0da2cc !important;
+}
+
+.BlueBorder {
+    border-color: #0da2cc !important;
+}
+
+.RedBack {
+    background-color: #bf0c34;
+}
+
+.JEEVAYU {
+    display: inline-block;
+}
+
+.JEEVAYU a:hover {
+    text-decoration: none;
+}
+
+.JEEVAYU.Small a {
+    width: 134px;
+    height: 28px;
+}
+
+.JEEVAYU.Large a {
+    width: 192px;
+    height: 40px;
+}
+
+.Header {
+    padding: 30px 5%;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    top: 0;
+}
+
+.Header .NavDesktop {
+    display: block;
+    float: right;
+    list-style: none;
+}
+
+.Header .NavDesktop>li {
+    margin-right: 20px;
+    padding: 10px 10px 10px 25px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.Header .NavDesktop>li:last-child {
+    margin-right: 0;
+}
+
+.Header .NavDesktop>li>a {
+    height: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: right;
+    color: #000;
+}
+
+.Header .NavDesktop>li>a:hover {
+    text-decoration: none;
+}
+
+.Header .NavDesktop>li.Selected,
+.Header .NavDesktop>li:hover {
+    background-image: url("data:image/svg+xml;utf8,<svg width='157' height='35' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 16H5L8.5 34L12 1H156' stroke='%23BF0C34' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+.Header .NavDesktop>li.Selected>a {
+    color: #bf0c34;
+}
+
+.Header .NavDesktop>li.Lang {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-left: 40px;
+    padding: 0;
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-transform: capitalize;
+    background-image: none;
+}
+
+.Header .NavDesktop>li.Lang>a {
+    padding: 3px 6px;
+    min-width: 24px;
+    text-align: center;
+    display: inline-block;
+}
+
+.Header .LangSelect {
+    position: absolute;
+    top: 38px;
+    right: 3px;
+    padding-top: 7px;
+    z-index: 99;
+    background-position: top 0 right 6px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg width='16' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M8 0L16 7H0L8 0Z' fill='%230DA2CC'/></svg>");
+}
+
+.Header .LangSelect>li {
+    display: block;
+    background-color: #0da2cc;
+}
+
+.Header .LangSelect>li.Selected {
+    background-color: #0192ba;
+    background-position: top 50% left 14px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8,<svg width='14' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 7.85714L6.14286 13L13 1' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>");
+}
+
+.Header .LangSelect>li>a {
+    display: block;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 9px 36px 9px 40px;
+}
+
+.Header .LangSelect>li>a:hover {
+    text-decoration: underline;
+}
+
+.Header a.VegBurger {
+    display: none;
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.Header.DropdownVisible {
+    background-color: #fff;
+}
+
+.Social {
+    display: inline-block;
+}
+
+.Social.Head {
+    margin-top: 15px;
+}
+
+.Social.Foot {
+    position: absolute;
+    right: 5%;
+}
+
+.Social li {
+    margin: 0 25px 10px 0;
+}
+
+.Social li:last-child {
+    margin-right: 0;
+}
+
+.Social li a {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+}
+
+.MobileMenu {
+    background-color: #bf0c34;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.MobileMenu>ul>li {
+    display: block;
+    margin-bottom: 28px;
+}
+
+.MobileMenu>ul>li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.MobileMenu ul li a {
+    color: #fff;
+}
+
+.MobileMenu ul li.Large a {
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.MobileMenu ul li.Small a {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.MobileMenu ul li.Lang a {
+    display: inline-block;
+    padding: 6px;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.Social.Head li a {
+    filter: brightness(0);
+}
+
+.Social.Foot li a {
+    filter: brightness(0);
+}
+
+.Social.MobileHead li a {
+    filter: brightness(1);
+}
+
+.Stores {
+    display: inline-block;
+}
+
+.Stores li {
+    margin: 0 25px 25px 0;
+    background-repeat: no-repeat;
+}
+
+.Stores li:last-child {
+    margin-right: 0;
+}
+
+.Stores li a {
+    display: block;
+    height: 46px;
+}
+
+.Stores li.GooglePlay {
+    width: 153px;
+    background-image: url("/i/share/Google_Play_Badge.png");
+}
+
+.Stores li.GooglePlay a {
+    width: 153px;
+}
+
+.Stores li.AppStore {
+    background-image: url("/i/share/App_Store_Badge.png")
+}
+
+.Stores li.AppStore a {
+    width: 138px;
+}
+
+.Stores li.ChromeWebStore a {
+    width: 207px;
+}
+
+.Section1 {
+    background-color: #fff;
+    padding-bottom: 75px;
+    margin-top: 100px;
+}
+
+.Section1 .Svg {
+    min-width: 280px;
+    padding-bottom: 57%;
+    float: right;
+    margin-bottom: -130px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+}
+
+.Section1 .Svg.Home {
+    width: 48%;
+}
+
+.Section1 .Notebook {
+    background-image: url("/i/homepage/Homepage-img01@3x.png");
+}
+
+.Section1 .Content {
+    display: inline-block;
+    max-width: 50%;
+    padding: 0 0 0 5%;
+}
+
+.Section1 .Content h2 {
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 38px;
+    color: #000;
+}
+
+.Section1 .Content p {
+    font-size: 27px;
+    line-height: 32px;
+    color: #000;
+    font-style: normal;
+    margin-bottom: 38px;
+}
+
+.Section1 .Content .Stores.Above {
+    margin-top: 157px;
+    margin-bottom: 38px;
+}
+
+.Section1 .Content .Stores.Below {
+    display: none;
+    margin-top: 22px;
+}
+
+.Sharpener {
+    clear: both;
+    height: 50px;
+    text-align: center;
+}
+
+.Sharpener div {
+    width: 88px;
+    height: 104px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    );
+}
+
+.SectionScanSolveLearn {
+    clear: both;
+    color: #fff;
+    background-color: #bf0c34;
+    padding: 200px 0;
+}
+
+.SectionScanSolveLearn .Left h2 {
+    margin-bottom: 34px;
+}
+
+.SectionScanSolveLearn .Right {
+    text-align: center;
+}
+
+.SectionScanSolveLearn .Right p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.SectionScanSolveLearn .Right p.Big {
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: bold;
+}
+
+.SectionScanSolveLearn .Right p.Big.Space {
+    margin-bottom: 45px;
+}
+
+.SectionScanSolveLearn .Right p.Small {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.Section3 {
+    clear: both;
+    color: #fff;
+    background-color: #e84e40;
+    padding: 150px 0;
+}
+
+.Section3 .ImageBlock .SectionImage {
+    background-image: url("/i/homepage/Homepage-img02@2x.png");
+}
+
+.Section3 .TextBlock p {
+    margin-top: 30px;
+}
+
+.SectionStepByStep {
+    clear: both;
+    background-color: #ffb52d;
+    color: #fff;
+    padding: 150px 0;
+}
+
+.SectionStepByStep .Left h2 {
+    margin-bottom: 34px;
+}
+
+.SectionStepByStep .TextBlock {
+    order: 1;
+}
+
+.SectionStepByStep .TextBlock p {
+    margin-top: 34px;
+}
+
+.SectionStepByStep .ImageBlock {
+    order: 2;
+}
+
+.SectionStepByStep .ImageBlock .SectionImage {
+    background-image: url("/i/homepage/Homepage-img03@2x.png");
+}
+
+.Section5 {
+    clear: both;
+    color: #fff;
+    background-color: #0da2cc;
+    padding: 150px 0;
+}
+
+.Section5 .ImageBlock .SectionImage.Instructions {
+    background-image: url("/i/homepage/Homepage-img04@2x.png");
+}
+
+.Section5 .TextBlock p {
+    margin-top: 34px;
+}
+
+.Section6 {
+    clear: both;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    padding: 150px 5%;
+}
+
+.Section6 h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 100px;
+}
+
+.Section6 h3 {
+    margin-bottom: 38px;
+    font-size: 27px;
+    line-height: 32px;
+    background-repeat: no-repeat;
+    height: 80px;
+    text-align: left;
+    display: inline-block;
+    background-position: 0 0;
+    padding: 25px 0 0 104px;
+}
+
+.Section6 p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.Section6 .Half {
+    text-align: left;
+}
+
+
+}
+
+}
+.SectionReviews {
+    clear: both;
+    color: #fff;
+    background-color: #87c540;
+    padding: 150px 5% 90px 5%;
+    text-align: center;
+}
+.SectionReviews>h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 100px;
+}
+.SectionReviews .ReviewSlider {
+    margin: 0 auto;
+    display: inline-block;
+}
+.SectionReviews .ReviewSlider div.Slide {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 12px 20px 12px;
+    color: #000;
+    background-color: #fff;
+    max-width: 392px;
+    min-height: 470px;
+    padding: 24px;
+    text-align: left;
+    border-radius: 4px;
+}
+.SectionReviews .ReviewSlider div.Slide h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+.SectionReviews .ReviewSlider div.Slide p.DateName {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ababab;
+    margin-right: 10px;
+}
+.SectionReviews .ReviewSlider div.Slide p.DateName.Name {
+    color: #7f7f7f;
+}
+.SectionReviews .ReviewSlider div.Slide .Stars {
+    clear: both;
+    height: 24px;
+    float: left;
+    margin-top: 7px;
+    background-repeat: repeat-x;
+    background-image: url("data:image/svg+xml;utf8,<svg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 2.5L14.598 8.92414L21.5106 9.40983L16.2037 13.8659L17.8779 20.5902L12 16.92L6.12215 20.5902L7.79633 13.8659L2.48944 9.40983L9.40199 8.92414L12 2.5Z' fill='%23FFB52F'/></svg>");
+}
+.SectionReviews .ReviewSlider div.Slide .Stars1 {
+    width: 24px;
+}
+.SectionReviews .ReviewSlider div.Slide .Stars2 {
+    width: 48px;
+}
+.SectionReviews .ReviewSlider div.Slide .Stars3 {
+    width: 72px;
+}
+.SectionReviews .ReviewSlider div.Slide .Stars4 {
+    width: 96px;
+}
+.SectionReviews .ReviewSlider div.Slide .Stars5 {
+    width: 120px;
+}
+.SectionReviews .ReviewSlider div.Slide .Profession {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffb52f;
+    float: right;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.SectionReviews .ReviewSlider div.Slide .Review {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 14px;
+}
+.SliderDots {
+    display: none;
+    text-align: center;
+}
+.SliderDots li {
+    margin-right: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+}
+.SliderDots li:last-child {
+    margin-right: 0;
+}
+.SliderDots li a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+.SliderDots.White li {
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='5' cy='5' r='5' fill='%23fff' opacity='0.3'/></svg>");
+}
+.SliderDots.White li.Selected {
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='5' cy='5' r='5' fill='%23fff'/></svg>");
+}
+.SliderDots.Black li {
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='5' cy='5' r='5' fill='%23000' opacity='0.3'/></svg>");
+}
+.SliderDots.Black li.Selected {
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='5' cy='5' r='5' fill='%23000'/></svg>");
+}
+.SectionReviews .HeartSquared {
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 64px;
+    margin-top: 20px;
+    );
+}
+.SectionParentsTeachers {
+    clear: both;
+    background-color: #fff;
+    font-size: 0;
+    text-align: center;
+    padding: 150px 5% 150px 5%;
+}
+.SectionParentsTeachers h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 88px;
+}
+.SectionParentsTeachers h3 {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+.SectionParentsTeachers h3 a {
+    color: inherit;
+}
+.SectionParentsTeachers h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.SectionParentsTeachers p {
+    font-size: 18px;
+    line-height: 26px;
+}
+.SectionParentsTeachers .Half {
+    text-align: center;
+}
+.SectionParentsTeachers .Half .Image {
+    width: 250px;
+    height: 250px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto 61px auto;
+}
+.SectionAwards {
+    clear: both;
+    padding: 150px 0;
+    color: #fff;
+    background-color: #bf0c34;
+    padding-left: 5%;
+}
+.SectionAwards ul {
+    display: inline-block;
+    width: 100%;
+}
+.SectionAwards ul li {
+    display: block;
+    margin-bottom: 86px;
+    width: 100%;
+    text-align: center;
+}
+.SectionAwards ul li a {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.SectionAwards ul li:last-child {
+    margin-bottom: 0;
+}
+. .SectionAwards ul li.FourYFN a {
+    width: 266px;
+    height: 83px;
+    ;
+}
+.SectionAwards ul li.NetExplo a {
+    width: 265px;
+    height: 62px;
+    ;
+}
+.SectionAwards h2 {
+    font-size: 40px;
+    line-height: 48px;
+}
+.SectionAwards p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 34px;
+}
+.Section10 {
+    clear: both;
+    background-color: #fff;
+    padding: 150px 5%;
+    text-align: center;
+}
+.Section10 .Tasks,
+.SingleColumn.Examples .Tasks {
+    float: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.Section10 .Tasks.Big,
+.SingleColumn.Examples .Tasks.Big {
+    width: 1060px;
+    height: 616px;
+    margin-left: -50%;
+}
+.Section10 .Tasks.Small,
+.SingleColumn.Examples .Tasks.Small {
+    width: 332px;
+    height: 445px;
+    display: none;
+}
+.Section10 h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 34px;
+}
+.Section10 p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 65px;
+}
+.Section10 .TopLink {
+    margin-bottom: 108px;
+}
+.Section10 a.Arrow {
+    font-size: 18px;
+    line-height: 26px;
+}
+.Section10 .LeftBlock {
+    width: 40%;
+    float: left;
+    text-align: left;
+}
+.Section10 .LeftBlock p {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.SectionDownload {
+    padding: 150px 0;
+    clear: both;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(/i/homepage/Homepage-img05.jpg);
+}
+.SectionDownload .Content {
+    width: 50%;
+    float: left;
+    padding: 0 5%;
+}
+.SectionDownload h2 {
+    margin-bottom: 34px;
+}
+.SectionDownload p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 96px;
+}
+div.Download {
+    margin-top: 34px;
+    color: #0da2cc;
+}
+div.Download a {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+}
+div.Download p {
+    margin: 8px 0 0 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: normal;
+}
+div.SingleColumn {
+    color: #000;
+    margin: 0 21%;
+}
+div.SingleColumn h2 {
+    font-size: 60px;
+    line-height: 72px;
+    margin-top: 100px;
+    margin-bottom: 38px;
+}
+div.SingleColumn h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 50px;
+    margin-bottom: 34px;
+}
+div.SingleColumn.TermsOfUse h3 {
+    font-size: 27px;
+    line-height: 32px;
+    margin-top: 40px;
+    margin-bottom: 34px;
+}
+div.SingleColumn h4 {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-transform: none;
+}
+div.SingleColumn p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+div.SingleColumn p.Summary {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+div.SingleColumn p.LastUpdate {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+div.SingleColumn img.Photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 22px;
+}
+div.SingleColumn.Examples {
+    padding-bottom: 100px;
+}
+div.SingleColumn.Examples h2 {
+    margin-bottom: 100px;
+}
+div.SingleColumn.Examples ul.ExampleGroups {
+    float: left;
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: left;
+}
+div.SingleColumn.Examples ul.ExampleGroups>li {
+    float: left;
+    width: 49%;
+    display: block;
+    padding-bottom: 103px;
+}
+div.SingleColumn.Examples ul.ExampleGroups>li>h3 {
+    margin-top: 0;
+}
+div.SingleColumn.Examples ul.ExampleGroups>li>ul {
+    margin: 0;
+}
+div.SingleColumn.Examples ul.ExampleGroups>li>ul>li {
+    padding: 8px 0;
+}
+div.SingleColumn.Examples ul.ExampleGroups>li>ul>li>a {
+    font-size: 22px;
+    line-height: 30px;
+}
+div.SingleColumn a.Arrow {
+    font-size: 22px;
+    line-height: 30px;
+}
+div.SingleColumn a.ArrowLeft {
+    font-size: 22px;
+    line-height: 30px;
+}
+.RedBackLink a {
+    color: #fff;
+    background-color: #bf0c34;
+}
+.RedBackLink a:hover {
+    text-decoration: none;
+    background-color: #9e0326;
+}
+div.SingleColumn div#OpenPositions {
+    margin: 35px 0 65px;
+}
+div.SingleColumn ul.Box {
+    margin: 0 0 50px 0;
+}
+div.SingleColumn ul.Box li {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+}
+div.SingleColumn ul.Box li:last-child {
+    margin-bottom: 0;
+}
+div.SingleColumn ul.Box li a {
+    display: block;
+    padding: 40px 40px 80px 40px;
+    background-repeat: no-repeat;
+    background-position: right 32px bottom 24px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='24' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M23 15.5L23.3536 15.8536C23.5488 15.6583 23.5488 15.3417 23.3536 15.1464L23 15.5ZM1 15C0.723858 15 0.5 15.2239 0.5 15.5C0.5 15.7761 0.723858 16 1 16L1 15ZM14.3536 6.14645C14.1583 5.95118 13.8417 5.95118 13.6464 6.14645C13.4512 6.34171 13.4512 6.65829 13.6464 6.85355L14.3536 6.14645ZM13.6464 24.1464C13.4512 24.3417 13.4512 24.6583 13.6464 24.8536C13.8417 25.0488 14.1583 25.0488 14.3536 24.8536L13.6464 24.1464ZM23 15L1 15L1 16L23 16V15ZM23.3536 15.1464L14.3536 6.14645L13.6464 6.85355L22.6464 15.8536L23.3536 15.1464ZM22.6464 15.1464L13.6464 24.1464L14.3536 24.8536L23.3536 15.8536L22.6464 15.1464Z' fill='white'/></svg>");
+}
+div.SingleColumn ul.Box li:hover {
+    background-color: #9e0326;
+}
+div.SingleColumn ul.Box li h3 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+div.SingleColumn ul.Box li p {
+    font-size: 18px;
+    line-height: 26px;
+}
+div.SingleColumn ul.Box li p.Large {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+div.SingleColumn a.BackCapitals {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-image: url("data:image/svg+xml;utf8,<svg width='22' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M22 7H2M2 7L8.05 1M2 7L8.05 13' stroke='%230DA2CC' stroke-width='2'/></svg>");
+}
+div.SingleColumn div.Box {
+    width: 100%;
+    margin: 50px 0;
+    padding: 40px 0 25px;
+    text-align: center;
+}
+div.SingleColumn.Job div.Box {
+    margin: 80px 0 50px;
+}
+div.SingleColumn.Job p a.back-to-jobs {
+    float: left;
+    padding-left: 28px;
+    background-image: url(/i/left-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left;
+    color: #BF0C34;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+div.SingleColumn div.Box h2,
+div.SingleColumn.Job h4#apply {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    transform: rotate(-2.7deg);
+    background: #F8E6EA;
+    width: fit-content;
+    margin: 110px auto 40px;
+}
+div.SingleColumn div.Box h2 span,
+div.SingleColumn.Job h4#apply span {
+    display: block;
+    transform: rotate(2.7deg);
+}
+div.SingleColumn.Job h4#apply {
+    max-width: 450px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+div.SingleColumn div.Box p {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 90px;
+}
+div.SingleColumn h4 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 24px;
+    font-weight: bold;
+    text-transform: none;
+}
+div.SingleColumn h3.Photos {
+    clear: both;
+}
+div.SingleColumn p.Capitals {
+    text-transform: uppercase;
+    font-size: 27px;
+    line-height: 32px;
+}
+div.SingleColumn ul {
+    margin: 0 0 0 50px;
+}
+div.SingleColumn ul li,
+div.SingleColumn ol li {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 8px 0;
+    display: list-item;
+}
+div.SingleColumn .rounded-red-btn {
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: #bf0c34;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+div.SingleColumn .rounded-red-btn:hover,
+div.SingleColumn .rounded-red-btn:focus {
+    text-decoration: none;
+    background-color: #9e0326;
+    /* PM RED DARK */
+}
+div.SingleColumn p.Button {
+    margin: 34px 0 50px 0;
+    padding: 0;
+}
+div.SingleColumn p.Button a {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 13px 51px 13px 15px;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-image: url("data:image/svg+xml;utf8,<svg width='24' height='19' viewBox='0 0 24 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M23 9.5L23.3536 9.85355C23.5488 9.65829 23.5488 9.34171 23.3536 9.14645L23 9.5ZM1 9C0.723858 9 0.5 9.22386 0.5 9.5C0.5 9.77614 0.723858 10 1 10L1 9ZM14.3536 0.146447C14.1583 -0.0488155 13.8417 -0.0488155 13.6464 0.146447C13.4512 0.341709 13.4512 0.658291 13.6464 0.853553L14.3536 0.146447ZM13.6464 18.1464C13.4512 18.3417 13.4512 18.6583 13.6464 18.8536C13.8417 19.0488 14.1583 19.0488 14.3536 18.8536L13.6464 18.1464ZM23 9L1 9L1 10L23 10V9ZM23.3536 9.14645L14.3536 0.146447L13.6464 0.853553L22.6464 9.85355L23.3536 9.14645ZM22.6464 9.14645L13.6464 18.1464L14.3536 18.8536L23.3536 9.85355L22.6464 9.14645Z' fill='white'/></svg>");
+}
+div.SingleColumn ul.Media {
+    margin: 0 -12px 0 -12px;
+    padding: 0;
+    text-align: left;
+}
+div.SingleColumn ul.Media li {
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+    padding: 12px 12px 50px 12px;
+    text-align: left;
+    min-width: 280px;
+}
+div.SingleColumn ul.Media.MobileScreenshots li {
+    width: auto;
+}
+div.SingleColumn ul.Media.Logo li {
+    float: left;
+    width: 33.33%;
+}
+div.SingleColumn ul.Media li h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+    margin: 0 0 18px 0;
+    padding: 0;
+}
+div.SingleColumn ul.Media li>a {
+    float: left;
+    margin-bottom: 17px;
+}
+div.SingleColumn ul.Media li a.MobileScreenshots {
+    float: none;
+}
+div.SingleColumn ul.Media li img {
+    float: left;
+    width: 100%;
+}
+div.SingleColumn ul.Media li img.Logo {
+    border: 1px solid rgba(0,
+    0,
+    0,
+    0.1);
+    box-sizing: border-box;
+}
+div.SingleColumn ul.Media li>img {
+    margin-bottom: 25px;
+}
+div.SingleColumn ul.Media li p {
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+div.SingleColumn ul.Media li p.First {
+    margin-top: 18px;
+    padding: 0;
+}
+div.SingleColumn ul.Media li p a {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    padding: 0 40px 0 0;
+}
+div.SingleColumn ul.Media.Logo li p a {
+    padding: 0;
+}
+div.SingleColumn ul.Media .AndroidScreenshots {
+    width: 110.33px;
+    height: 221px;
+    float: none;
+}
+div.SingleColumn ul.Media .IosScreenshots {
+    width: 104.71px;
+    height: 221px;
+    float: none;
+}
+div.SingleColumn.Job h4 {
+    margin-top: 90px;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+}
+div.SingleColumn.Job h4.ExpiredAd {
+    max-width: 704px;
+}
+div.SingleColumn.Job p {
+    line-height: 28px;
+}
+div.SingleColumn.Job p.ExpiredAd {
+    max-width: 704px;
+    margin-bottom: 78px;
+}
+div.SingleColumn.Job.Grayed div.Box {
+    margin: 0px 0 50px;
+    padding: 0px 0 25px;
+}
+div.SingleColumn.Job.Grayed div.Box h2 {
+    color: #7F7F7F;
+}
+div.SingleColumn.Job.Grayed div.Box p:first-of-type {
+    margin-bottom: 20px;
+}
+div.SingleColumn.Job.Grayed div.Box .rounded-red-btn:first-of-type {
+    display: none;
+}
+div.SingleColumn.Job.Grayed h4:first-of-type {
+    margin-top: 60px;
+}
+div.SingleColumn.Job.Grayed p:first-child {
+    margin-top: 120px;
+    color: #bf0c34;
+    opacity: 1;
+}
+div.SingleColumn.Job.Grayed p:first-child a {
+    float: none;
+}
+div.SingleColumn.Grayed h3 {
+    opacity: 0.5;
+}
+div.SingleColumn.Grayed h4 {
+    opacity: 0.5;
+}
+div.SingleColumn.Grayed ul li {
+    opacity: 0.5;
+}
+div.SingleColumn.Grayed p {
+    opacity: 0.5;
+}
+div.SingleColumn.Grayed .NoBlur {
+    opacity: 1;
+}
+div.SingleColumn.Grayed h3.NoBlur {
+    padding-top: 40px;
+}
+.Line {
+    display: none;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("data:image/svg+xml;utf8,<svg width='375' height='6' fill='none' xmlns='http://www.w3.org/2000/svg'><path opacity='0.15' fill-rule='evenodd' clip-rule='evenodd' d='M375 6L0 5.99997L5.24537e-07 -3.27835e-05L375 0L375 6Z' fill='url(%23paint0_linear)'/><defs><linearGradient id='paint0_linear' x1='370.833' y1='6' x2='370.833' y2='0.13333' gradientUnits='userSpaceOnUse'><stop/><stop offset='1' stop-opacity='0.01'/></linearGradient></defs></svg>");
+}
+.InfoPage {
+    text-align: center;
+    color: #000;
+    padding: 300px 5% 50px 5%;
+    background-repeat: no-repeat;
+    background-position: left 50% top 40px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='158' height='210' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(%23clip0)'><path d='M101.692 115.878C116.005 120.156 131.075 112.021 135.352 97.7084C139.63 83.3959 131.495 68.3257 117.183 64.0481C102.87 59.7705 87.7999 67.9054 83.5223 82.2178C79.2447 96.5303 87.3796 111.6 101.692 115.878Z' fill='white'/><path d='M33.6549 133.187C47.9673 137.465 63.0376 129.33 67.3152 115.017C71.5928 100.705 63.4579 85.6347 49.1454 81.3571C34.833 77.0794 19.7627 85.2143 15.4851 99.5267C11.2075 113.839 19.3424 128.909 33.6549 133.187Z' fill='white'/><path d='M70.8596 0.390411L56.582 4.29504L67.3197 43.5583L81.5973 39.6537L70.8596 0.390411Z' fill='%23BF0C34'/><path d='M42.3049 8.19972L28.0274 12.1044L38.7651 51.3676L53.0426 47.463L42.3049 8.19972Z' fill='%23BF0C34'/><path d='M31.5313 138.77C24.9003 136.801 19.0916 132.724 14.985 127.158C10.8784 121.592 8.69764 114.839 8.77295 107.922C8.84825 101.005 11.1756 94.3015 15.4024 88.826C19.6292 83.3505 25.5252 79.4015 32.1975 77.5772C49.1232 72.949 66.6588 82.9528 71.2875 99.8782C72.7861 105.35 72.7942 111.123 71.311 116.598C69.8277 122.074 66.907 127.054 62.8517 131.021C58.7963 134.988 53.7539 137.798 48.2468 139.161C42.7398 140.523 36.9686 140.388 31.5313 138.77ZM47.3232 85.6168C42.3046 84.1275 36.9335 84.3466 32.0529 86.2397C27.1722 88.1328 23.0582 91.5928 20.3565 96.0767C17.6548 100.561 16.5182 105.815 17.1252 111.014C17.7321 116.214 20.0483 121.065 23.7101 124.806C27.372 128.547 32.1723 130.966 37.3578 131.684C42.5432 132.402 47.8203 131.378 52.361 128.773C56.9016 126.168 60.4488 122.129 62.4459 117.29C64.443 112.451 64.777 107.086 63.3954 102.037C62.3331 98.1591 60.2998 94.6164 57.4876 91.7434C54.6753 88.8703 51.1771 86.7617 47.3232 85.6168Z' fill='%23BF0C34'/><path d='M99.924 120.067C93.293 118.098 87.4843 114.021 83.3777 108.455C79.2711 102.889 77.0902 96.1358 77.1655 89.219C77.2408 82.3022 79.5681 75.5983 83.7949 70.1228C88.0217 64.6472 93.9177 60.6982 100.59 58.874C117.516 54.2455 135.051 64.2495 139.68 81.175C144.309 98.1006 134.305 115.636 117.379 120.265C111.657 121.837 105.609 121.768 99.924 120.067ZM115.716 66.9135C110.697 65.4238 105.325 65.6427 100.443 67.5358C95.5622 69.429 91.4476 72.8893 88.7454 77.3737C86.0432 81.8581 84.9064 87.1127 85.5134 92.313C86.1204 97.5133 88.4369 102.365 92.0992 106.106C95.7615 109.848 100.562 112.267 105.749 112.986C110.935 113.704 116.212 112.679 120.754 110.074C125.295 107.468 128.842 103.428 130.839 98.5888C132.836 93.7491 133.17 88.3832 131.788 83.3333C130.726 79.4559 128.692 75.9133 125.88 73.0402C123.068 70.1672 119.57 68.0585 115.716 66.9135Z' fill='%23BF0C34'/><path d='M24.8535 85.2169L17.2137 57.2813L24.3525 55.3289L20.4479 41.0514L6.17033 44.956C4.28024 45.4788 2.67388 46.7285 1.7021 48.4318C0.730324 50.1352 0.472105 52.154 0.983872 54.0471L13.7242 100.633C15.5073 94.3462 19.4476 88.8883 24.8535 85.2169Z' fill='%23BF0C34'/><path d='M127.943 69.3959L115.203 22.81C114.68 20.9199 113.43 19.3135 111.727 18.3417C110.023 17.3699 108.005 17.1117 106.112 17.6235L91.8341 21.5281L95.7387 35.8057L102.877 33.8534L110.517 61.789C117.039 62.1983 123.209 64.8915 127.943 69.3959Z' fill='%23BF0C34'/><path d='M124.283 112.667L131.273 138.226L134.048 148.373L139.891 169.736L54.2254 193.164L48.383 171.801L45.608 161.654L38.6181 136.095C32.0962 135.685 25.9267 132.992 21.1924 128.488L31.3305 165.558L34.1055 175.705L41.9002 204.207C42.4231 206.097 43.6727 207.704 45.3761 208.676C47.0794 209.647 49.0982 209.906 50.9914 209.394L150.934 182.062C152.824 181.539 154.431 180.289 155.402 178.586C156.374 176.882 156.632 174.864 156.121 172.97L148.326 144.468L145.551 134.321L135.413 97.2508C133.63 103.538 129.689 108.995 124.283 112.667Z' fill='%23BF0C34'/><path d='M66.3939 100.232C65.6697 100.015 65.0198 99.6013 64.5164 99.0372C64.013 98.473 63.6758 97.7804 63.5421 97.0363C63.4085 96.2921 63.4837 95.5254 63.7595 94.8214C64.0352 94.1174 64.5006 93.5035 65.1041 93.048C69.4531 89.9067 74.7924 88.4466 80.1347 88.9377L79.2147 97.0675L79.2367 97.0701C75.9703 96.8083 72.715 97.6955 70.033 99.5785C69.5206 99.9659 68.924 100.227 68.2917 100.341C67.6594 100.454 67.0092 100.417 66.3939 100.232Z' fill='%23BF0C34'/><path d='M35.98 84.1646C33.5828 84.8177 31.483 86.275 30.0324 88.2921C30.6162 88.1593 31.225 88.188 31.7937 88.3753C32.3623 88.5625 32.8693 88.9011 33.2599 89.3548C33.6506 89.8085 33.9102 90.36 34.011 90.9501C34.1117 91.5403 34.0498 92.1467 33.8318 92.7043C33.6139 93.2619 33.2481 93.7495 32.7738 94.1149C32.2995 94.4802 31.7345 94.7093 31.1397 94.7777C30.545 94.8461 29.9429 94.7512 29.398 94.5031C28.8532 94.255 28.3862 93.8631 28.0473 93.3696C27.7706 95.6847 28.2448 98.0275 29.4 100.053C30.5552 102.078 32.3304 103.679 34.4639 104.619C36.5975 105.56 38.9767 105.79 41.251 105.276C43.5252 104.762 45.5744 103.531 47.0965 101.765C48.6186 99.999 49.5332 97.7906 49.7055 95.4654C49.8779 93.1402 49.2988 90.8211 48.0537 88.8498C46.8087 86.8784 44.9634 85.3591 42.7897 84.5156C40.616 83.6722 38.2289 83.5491 35.98 84.1646Z' fill='%23BF0C34'/><path d='M102.526 92.6915C100.128 93.3446 98.0285 94.802 96.5779 96.8192C97.1614 96.6871 97.7699 96.7165 98.3381 96.904C98.9062 97.0915 99.4125 97.4302 99.8027 97.8837C100.193 98.3372 100.452 98.8885 100.553 99.4782C100.654 100.068 100.592 100.674 100.374 101.231C100.156 101.789 99.7912 102.276 99.3174 102.641C98.8437 103.007 98.2794 103.236 97.6851 103.305C97.0908 103.374 96.4889 103.28 95.9441 103.033C95.3993 102.786 94.9321 102.395 94.5925 101.902C94.3172 104.217 94.7925 106.559 95.9485 108.584C97.1046 110.609 98.8802 112.208 101.014 113.148C103.148 114.087 105.527 114.316 107.8 113.802C110.074 113.287 112.123 112.056 113.644 110.29C115.166 108.523 116.079 106.315 116.251 103.99C116.423 101.665 115.844 99.3461 114.599 97.3752C113.353 95.4043 111.508 93.8854 109.335 93.0421C107.161 92.1989 104.774 92.076 102.526 92.6915Z' fill='%23BF0C34'/><path d='M9.53844 106.978L7.53485 107.526C6.42182 107.831 5.76631 108.98 6.0707 110.093L7.92744 116.882C8.23184 117.995 9.38086 118.651 10.4939 118.346L12.4975 117.798C13.6105 117.494 14.266 116.345 13.9616 115.232L12.1049 108.443C11.8005 107.33 10.6515 106.674 9.53844 106.978Z' fill='%23BF0C34'/><path d='M137.064 72.1058L135.06 72.6538C133.947 72.9581 133.292 74.1072 133.596 75.2202L135.453 82.0096C135.757 83.1226 136.906 83.7781 138.019 83.4738L140.023 82.9258C141.136 82.6214 141.791 81.4724 141.487 80.3594L139.63 73.57C139.326 72.457 138.177 71.8014 137.064 72.1058Z' fill='%23BF0C34'/><path d='M71.6977 160.581C70.962 160.36 70.3032 159.937 69.7967 159.36C69.2902 158.782 68.9565 158.074 68.8337 157.316C68.7109 156.558 68.804 155.78 69.1024 155.073C69.4007 154.365 69.8923 153.755 70.5208 153.314C81.5556 145.564 91.6641 139.698 102.333 134.853C102.822 134.63 103.35 134.506 103.887 134.488C104.425 134.47 104.96 134.557 105.464 134.746C105.967 134.935 106.428 135.221 106.821 135.588C107.213 135.955 107.53 136.396 107.752 136.885C107.974 137.374 108.098 137.903 108.116 138.44C108.134 138.977 108.046 139.513 107.857 140.016C107.667 140.519 107.381 140.98 107.014 141.372C106.646 141.765 106.205 142.081 105.716 142.303C95.5211 146.932 85.8319 152.558 75.2232 160.009C74.7172 160.365 74.137 160.602 73.5262 160.701C72.9155 160.8 72.2903 160.759 71.6977 160.581Z' fill='%23BF0C34'/></g><defs><clipPath id='clip0'><rect width='157.5' height='210' fill='white'/></clipPath></defs></svg>");
+}
+.InfoPage.Beta {
+    background-image: url("data:image/svg+xml;utf8,<svg width='158' height='210' viewBox='0 0 158 210' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(%23clip0)'><path d='M50.1409 118.195C65.2631 117.27 76.7723 104.261 75.8474 89.1392C74.9225 74.0169 61.9137 62.5077 46.7914 63.4326C31.6692 64.3575 20.16 77.3663 21.0849 92.4886C22.0098 107.611 35.0186 119.12 50.1409 118.195Z' fill='white'/><path d='M118.494 135.908C133.617 134.983 145.126 121.975 144.201 106.852C143.276 91.7301 130.267 80.2208 115.145 81.1457C100.023 82.0706 88.5135 95.0795 89.4384 110.202C90.3633 125.324 103.372 136.833 118.494 135.908Z' fill='white'/><path d='M114.982 8.48647L104.293 47.7533L118.572 51.6401L129.26 12.3732L114.982 8.48647Z' fill='%23BF0C34'/><path d='M86.4248 0.713218L75.7363 39.9801L90.0152 43.8668L100.704 4.59993L86.4248 0.713218Z' fill='%23BF0C34'/><path d='M45.6687 103.534C48.4535 104.292 51.4253 103.912 53.9305 102.479C56.4356 101.046 58.2689 98.6767 59.0269 95.8919C59.7849 93.1071 59.4056 90.1353 57.9725 87.6301C56.5393 85.125 54.1697 83.2917 51.3849 82.5337C50.5452 82.3085 49.6816 82.1849 48.8125 82.1655C49.3573 82.5557 49.7699 83.1031 49.995 83.7344C50.2201 84.3656 50.247 85.0506 50.072 85.6976C49.9583 86.1152 49.7635 86.5064 49.4986 86.8487C49.2337 87.191 48.9041 87.4779 48.5284 87.6928C48.1527 87.9077 47.7383 88.0465 47.3089 88.1013C46.8796 88.1561 46.4436 88.1258 46.026 88.0121C45.6084 87.8984 45.2172 87.7036 44.8749 87.4387C44.5325 87.1739 44.2457 86.8442 44.0308 86.4685C43.8158 86.0928 43.677 85.6785 43.6222 85.2491C43.5674 84.8198 43.5977 84.3838 43.7114 83.9662C43.8006 83.6561 43.9353 83.361 44.1112 83.0906C42.6338 83.7444 41.3209 84.7198 40.2683 85.9455C39.2157 87.1712 38.45 88.6164 38.0268 90.1756C37.6515 91.5545 37.5514 92.9938 37.7323 94.4113C37.9133 95.8289 38.3716 97.1969 39.0812 98.4374C39.7908 99.6778 40.7378 100.766 41.8681 101.641C42.9984 102.515 44.2898 103.158 45.6687 103.534Z' fill='%23BF0C34'/><path d='M117.487 100.527C116.646 100.302 115.782 100.178 114.912 100.159C115.456 100.549 115.868 101.096 116.093 101.727C116.318 102.358 116.345 103.043 116.17 103.69C115.94 104.533 115.385 105.251 114.626 105.685C113.867 106.119 112.967 106.234 112.124 106.004C111.706 105.891 111.315 105.696 110.973 105.431C110.63 105.166 110.343 104.836 110.128 104.461C109.914 104.085 109.775 103.671 109.72 103.241C109.665 102.812 109.695 102.376 109.809 101.958C109.898 101.65 110.032 101.356 110.207 101.086C108.731 101.741 107.419 102.716 106.368 103.941C105.316 105.166 104.551 106.611 104.128 108.169C103.37 110.954 103.75 113.925 105.183 116.431C106.616 118.936 108.986 120.769 111.77 121.527C113.149 121.902 114.589 122.002 116.006 121.821C117.424 121.641 118.792 121.182 120.032 120.473C121.273 119.763 122.361 118.816 123.235 117.686C124.11 116.555 124.753 115.264 125.128 113.885C125.504 112.506 125.604 111.067 125.423 109.649C125.242 108.232 124.784 106.864 124.074 105.623C123.365 104.383 122.418 103.294 121.287 102.42C120.157 101.546 118.866 100.902 117.487 100.527Z' fill='%23BF0C34'/><path d='M150.975 45.2943L136.695 41.4065L132.808 55.6859L139.947 57.6288L133.472 81.412C130.888 79.8322 128.092 78.6282 125.168 77.8362C121.138 76.7277 116.928 76.4294 112.782 76.9586C108.636 77.4877 104.637 78.8337 101.014 80.9188C96.4113 83.537 92.5393 87.2687 89.7529 91.7716C88.2881 90.993 86.7428 90.3764 85.1444 89.9328C83.5367 89.5029 81.8865 89.2517 80.2238 89.1839C79.9028 75.4733 70.663 62.9983 56.7731 59.2171C53.85 58.4172 50.8269 58.0423 47.797 58.104L54.2734 34.308L61.4131 36.253L65.3009 21.9736L51.0215 18.0858C49.1282 17.5768 47.1104 17.8376 45.4087 18.8112C43.707 19.7849 42.4596 21.3923 41.9391 23.2825L31.0525 63.275C27.2445 65.7493 24.0106 69.0103 21.5681 72.8388C21.4886 72.8088 21.4077 72.7829 21.3256 72.7611C20.9294 72.6531 20.5159 72.6243 20.1086 72.6762C19.7013 72.7282 19.3082 72.8598 18.9518 73.0637C18.5954 73.2676 18.2826 73.5397 18.0314 73.8645C17.7802 74.1893 17.5954 74.5604 17.4877 74.9567L16.1835 79.7429C16.0181 80.3512 16.0403 80.9954 16.2472 81.5909C16.454 82.1864 16.8359 82.7056 17.3429 83.0804C15.7594 90.1792 16.6759 97.6072 19.9376 104.108L11.6486 134.558L1.12826 173.211C0.619002 175.105 0.879709 177.122 1.85342 178.824C2.82713 180.526 4.43471 181.773 6.32504 182.294L106.276 209.5C108.169 210.01 110.187 209.749 111.889 208.775C113.591 207.802 114.838 206.194 115.358 204.303L123.119 175.8L134.177 135.173C135.049 134.606 135.892 133.997 136.705 133.345C141.549 129.483 145.15 124.283 147.061 118.391C147.689 118.325 148.281 118.071 148.762 117.662C149.242 117.254 149.588 116.709 149.753 116.101L151.057 111.315C151.148 110.985 151.183 110.643 151.162 110.303C151.122 109.65 150.878 109.026 150.465 108.52C150.052 108.013 149.491 107.648 148.86 107.477C148.78 107.454 148.701 107.436 148.623 107.422C148.468 102.874 147.331 98.413 145.29 94.3458L156.169 54.377C156.679 52.4839 156.418 50.4661 155.445 48.7643C154.472 47.0626 152.865 45.8151 150.975 45.2943ZM25.6097 83.7087C26.9137 78.9416 29.6767 74.702 33.5114 71.5841C37.346 68.4663 42.0602 66.6265 46.9931 66.3227C49.5626 66.1666 52.1403 66.4325 54.6238 67.1099C59.3911 68.4143 63.6307 71.1777 66.7486 75.0127C69.8664 78.8478 71.7062 83.5622 72.01 88.4954C72.166 91.0642 71.9 93.6412 71.2226 96.124C69.5695 102.168 65.5864 107.31 60.1472 110.422C54.7079 113.533 48.2566 114.36 42.2084 112.721C39.2103 111.914 36.402 110.52 33.9461 108.62C31.4901 106.721 29.4352 104.353 27.9002 101.654C26.3509 98.9628 25.3507 95.9911 24.9576 92.9108C24.5644 89.8305 24.7861 86.7028 25.6097 83.7087ZM108.839 171.913L103.024 193.278L17.3504 169.957L23.1654 148.592L31.7551 117.038C34.3399 118.617 37.1358 119.821 40.0592 120.614C43.4024 121.528 46.8729 121.887 50.3324 121.677C56.8971 121.266 63.1752 118.84 68.3106 114.73C73.5695 110.533 77.3535 104.768 79.1134 98.2734C79.1975 97.9632 79.2774 97.6532 79.3509 97.3416C80.581 97.351 81.8052 97.5136 82.9951 97.8256C84.1787 98.1602 85.3162 98.6404 86.3815 99.2553C86.2865 99.5599 86.198 99.8683 86.1139 100.178C81.5065 117.104 91.5282 134.625 108.456 139.233C111.38 140.03 114.403 140.405 117.432 140.346L108.839 171.913ZM139.617 114.741C137.964 120.785 133.982 125.927 128.543 129.038C123.104 132.15 116.654 132.978 110.605 131.34C104.561 129.687 99.418 125.705 96.3062 120.265C93.1943 114.826 92.3673 108.374 94.0066 102.326C94.8143 99.3277 96.2085 96.5197 98.1084 94.064C100.008 91.6084 102.376 89.5539 105.076 88.0194C108.216 86.2131 111.731 85.1564 115.347 84.9317C117.932 84.7763 120.524 85.0456 123.021 85.7289C126.019 86.5359 128.827 87.9298 131.283 89.8298C133.739 91.7299 135.793 94.0983 137.327 96.7979C138.877 99.4885 139.877 102.46 140.27 105.54C140.664 108.62 140.442 111.747 139.617 114.741Z' fill='%23BF0C34'/><path d='M83.4801 144.843C77.3699 147.852 69.5592 148.612 63.3428 148.603C61.0597 148.62 58.7798 148.427 56.5322 148.025C56.4254 149.674 56.5494 151.329 56.9005 152.943C58.7554 161.478 66.3521 167.073 73.8681 165.44C81.3842 163.807 85.9734 155.563 84.1184 147.028C83.952 146.287 83.7388 145.557 83.4801 144.843Z' fill='%23BF0C34'/></g><defs><clipPath id='clip0'><rect width='157.5' height='210' fill='white'/></clipPath></defs></svg>");
+}
+.InfoPage.Magic {
+    background-image: url("data:image/svg+xml;utf8,<svg width='295' height='210' viewBox='0 0 295 210' fill='none' xmlns='http://www.w3.org/2000/svg'><g clip-path='url(%23clip0)'><path d='M190.47 115.621H102.485C102.485 115.621 103.3 141.281 102.38 157.681C101.657 170.569 99.1956 189.601 98.5492 194.47C98.4455 194.855 98.3926 195.245 98.3926 195.638C98.3926 203.57 119.921 210 146.477 210C173.033 210 194.562 203.57 194.562 195.638C194.562 195.245 194.509 194.855 194.405 194.47C193.759 189.601 191.298 170.569 190.574 157.681C189.654 141.281 190.47 115.621 190.47 115.621Z' fill='%234C4F54'/><path d='M190.47 115.621H102.485C102.485 115.621 103.3 141.281 102.38 157.681C101.657 170.569 99.1956 189.601 98.5492 194.47C98.4455 194.855 98.3926 195.245 98.3926 195.638C98.3926 203.57 119.921 210 146.477 210C173.033 210 194.562 203.57 194.562 195.638C194.562 195.245 194.509 194.855 194.405 194.47C193.759 189.601 191.298 170.569 190.574 157.681C189.654 141.281 190.47 115.621 190.47 115.621Z' fill='%234C4F54'/><path fill-rule='evenodd' clip-rule='evenodd' d='M102.818 137.361C102.812 130.332 102.689 123.842 102.596 119.816C112.184 124.392 128.264 127.393 146.477 127.393C164.691 127.393 180.77 124.393 190.357 119.817C190.264 123.843 190.143 130.333 190.137 137.361C180.521 141.878 164.553 144.833 146.477 144.833C128.402 144.833 112.434 141.878 102.818 137.361Z' fill='%23E84E40'/><path opacity='0.4' fill-rule='evenodd' clip-rule='evenodd' d='M167.719 125.879C167.209 136.651 168.32 156.142 170.277 178.711C172.264 201.601 146.326 205.664 112.549 205.886C121.225 208.431 133.115 210 146.234 210C172.791 210 194.32 203.57 194.32 195.638C194.32 195.245 194.268 194.855 194.162 194.47C193.518 189.601 191.055 170.569 190.332 157.681C189.412 141.281 190.227 115.621 190.227 115.621H175.039L167.719 125.879Z' fill='black' fill-opacity='0.31'/><ellipse cx='147.5' cy='109.978' rx='66.5' ry='18.9784' fill='%234C4F54'/><ellipse cx='147.501' cy='108.953' rx='47.0615' ry='10.7716' fill='%23333333'/><mask id='mask0' mask-type='alpha' maskUnits='userSpaceOnUse' x='88' y='39' width='97' height='81'><path d='M147.5 119.724C131.586 119.724 117.517 117.916 109 115.149L88 41.5L156.5 39.5L184.5 115.61C175.883 118.115 162.512 119.724 147.5 119.724Z' fill='%23333333'/></mask><g mask='url(%23mask0)'><path d='M145.202 44.9267L172.913 119.974L131.637 135.215L103.926 60.1678L145.202 44.9267Z' fill='white' stroke='%23F0F0F0' stroke-width='3'/></g><path d='M85 75V82.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M88.966 79H81' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M105 42V49.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M108.966 46H101' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M65 38V45.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M68.966 42H61' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M120 24V31.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M123.966 28H116' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M170 52V59.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M173.966 56H166' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M192 34V41.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M195.966 38H188' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M205 80V87.966' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M208.966 84H201' stroke='%23FFB52F' stroke-width='2' stroke-linecap='round'/><path d='M271.025 54.1651C272.105 53.934 272.794 52.8711 272.563 51.791L272.067 49.4727C271.836 48.3926 270.773 47.7042 269.693 47.9353L174.213 68.3592L175.545 74.589L271.025 54.1651Z' fill='%234C4F54'/><path d='M149.115 74.9417C148.081 75.2128 147.443 76.2495 147.666 77.2952C147.89 78.3408 148.897 79.0257 149.951 78.8499L175.658 74.565L174.325 68.3352L149.115 74.9417Z' fill='%23FFB52F'/></g><defs><clipPath id='clip0'><rect width='295' height='210' fill='white'/></clipPath></defs></svg>");
+}
+.InfoPage.Confirmed {
+    background-position: left 50% top 80px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='166' height='75' viewBox='0 0 166 75' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M163.58 15.4496C164.988 16.322 165.423 18.1711 164.55 19.5797L145.35 50.5797C144.867 51.3599 144.053 51.876 143.142 51.9805C142.23 52.085 141.32 51.7664 140.673 51.1157L127.873 38.2479C126.705 37.0732 126.71 35.1737 127.884 34.0052C129.059 32.8368 130.958 32.8418 132.127 34.0164L142.249 44.1922L159.45 16.4204C160.322 15.0118 162.171 14.5772 163.58 15.4496Z' fill='%2387C540'/><path fill-rule='evenodd' clip-rule='evenodd' d='M23 4C23 1.79086 24.791 0 27 0H139C141.209 0 143 1.79086 143 4V28C143 29.6569 141.657 31 140 31C138.343 31 137 29.6569 137 28V8.92706L103.58 36.8691L137 65.4844V59C137 57.3431 138.343 56 140 56C141.657 56 143 57.3431 143 59V70.5714C143 72.7806 141.209 74.5714 139 74.5714H27C24.791 74.5714 23 72.7806 23 70.5714V4ZM82.8828 45.2924L35.0332 6H131.146L84.1582 45.2867C83.791 45.595 83.2539 45.5974 82.8828 45.2924ZM98.9141 40.7716L131.381 68.5714H34.7949L67.8867 40.7425L79.0742 49.9293C81.6758 52.0645 85.4258 52.0479 88.0078 49.8898L98.9141 40.7716ZM63.1719 36.8693L29 65.6058V8.8089L63.1719 36.8693Z' fill='%23EAEAEA'/></svg>");
+}
+.InfoPage h1 {
+    font-size: 60px;
+    line-height: 72px;
+    margin-bottom: 34px;
+}
+.InfoPage p {
+    font-size: 22px;
+    line-height: 30px;
+}
+.InfoPage p.Pin {
+    font-size: 60px;
+    line-height: 72px;
+    color: #0da2cc;
+    margin-top: 34px;
+}
+.Footer {
+    padding: 75px 110px;
+    text-align: center;
+    border-top: 1px solid #ABABAB;
+    margin: 0 5%;
+}
+.Footer h4 {
+    position: absolute;
+    left: 5%;
+}
+.Footer ul.Links {
+    display: inline-block;
+    max-width: 40%;
+    text-align: left;
+}
+.Footer ul.Links li {
+    width: 50%;
+}
+.Footer ul.Links li a {
+    font-size: 16px;
+    line-height: 32px;
+    white-space: nowrap;
+    color: #000;
+}
+.cookiebanner-close {
+    font-size: 12px;
+    padding-top: 10px;
+}
+div.ccpa ul {
+    list-style-type: disc;
+}
+h4.ccpa a {
+    color: #0b0b0b
+}
+div.cookiebanner {
+    position: fixed;
+    background: #4C4F54!important;
+    opacity: 0.95!important;
+    color: #fff!important;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100px!important;
+    z-index: 9999999!important;
+    text-align: left!important;
+}
+div.cookiebanner span {
+    position: absolute;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    bottom: 20%;
+    left: 5%;
+    width: 80%;
+}
+div.cookiebanner span a {
+    color: white!important;
+    text-decoration: underline!important;
+    font-weight: bold!important;
+}
+div.cookiebanner div.cookiebanner-close {
+    position: absolute;
+    display: inline-block;
+    padding: 12px!important;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    bottom: 35%;
+    right: 4%;
+    width: 90px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 72px;
+    cursor: pointer;
+}
+.jobsExtraMargin {
+    margin-top: 50px;
+}
+.no-send-resume-p,
+.send-resume {
+    margin-bottom: 80px !important;
+}
+@media only screen and (min-width: 1680px) {
+    .Section1 .Content h2 {
+        font-size: 86px;
+        line-height: 96px;
+    }
+}
+
+/* 1440 */
+@media only screen and (max-width:1439px) {
+    .SectionList {
+        display: block;
+    }
+    .SectionList>li {
+        width: 100%;
+    }
+    .SectionScanSolveLearn .Right {
+        width: 50%;
+    }
+    .Section10 .Tasks.Big,
+    .SingleColumn.Examples .Tasks.Big {
+        width: 795px;
+        height: 462px;
+    }
+    div.SingleColumn {
+        margin: 0 15%;
+    }
+    .SectionReviews .ReviewSlider {
+        max-width: 392px;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .SectionReviews .SliderDots {
+        display: block;
+    }
+    .SectionReviews .HeartSquared {
+        display: none;
+    }
+}
+
+/* max 1440px start */
+@media only screen and (max-width: 1440px) {
+    .SectionAwards ul li.TechCrunchDisrupt a,
+    .SectionAwards ul li.FourYFN a,
+    .SectionAwards ul li.NetExplo a {
+        width: 184px;
+        height: 54px;
+    }
+}
+
+/* max 1440px end */
+
+/* 1080 */
+@media only screen and (max-width:1079px) {
+    .Section1 .Content .Stores.Above,
+    .Svg.Home.Notebook,
+    .Svg.Parent {
+        margin-top: 70px;
+    }
+    .SectionScanSolveLearn .Right {
+        padding-top: 20px;
+    }
+    .SectionScanSolveLearn .Right p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .SectionScanSolveLearn .Right p.Big {
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: bold;
+    }
+    .SectionScanSolveLearn .Right p.Big.Space {
+        margin-bottom: 48px;
+    }
+    .SectionScanSolveLearn .Right p.Small {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .Section10 .Tasks.Big,
+    .SingleColumn.Examples .Tasks.Big {
+        width: 596px;
+        height: 347px;
+    }
+}
+@media only screen and (max-width: 1054px) {
+    div.cookiebanner {
+        height: 115px;
+    }
+    div.cookiebanner span {
+        line-height: 25px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .SectionReviews .ReviewSlider>div {
+        width: 100% !important;
+    }
+}
+
+/* 1024 */
+@media only screen and (max-width:1023px) {
+    .Title {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .Text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .Section1 .Content h2 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+    .Section6 h2 {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 54px;
+    }
+    .Section6 h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    div.SingleColumn {
+        margin: 0 5%;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        min-height: 481px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1265px) {
+    div.cookiebanner {
+        height: 160px;
+    }
+}
+
+/* min 1024px and max 1439px start */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+    .SectionReviews .ReviewSlider {
+        max-width: 922px;
+    }
+    .SectionReviews .ReviewSlider div:first-child {
+        max-width: 922px!important;
+        transition: all 350ms ease-out 0s!important;
+        transform: translate3d(0px, 0px, 0px)!important;
+    }
+    .SectionReviews .SliderDots {
+        display: none;
+    }
+    .SectionReviews .HeartSquared {
+        display: block;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+        min-height: 605px;
+    }
+    div.cookiebanner div.cookiebanner-close {
+        width: 10%;
+    }
+}
+
+/* min 1024px and max 1439px end*/
+
+/* 960 */
+@media only screen and (max-width:959px) {
+    .Header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        width: 100%;
+        padding: 15px 5%;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+    .Header .NavDesktop {
+        display: none;
+    }
+    .Header a.VegBurger {
+        display: block;
+    }
+    .Section1 .Content .Stores .Above {
+        margin-top: 50px;
+    }
+    .SectionScanSolveLearn {
+        padding: 100px 0px;
+    }
+    .SectionScanSolveLearn .Left {
+        float: none;
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    .SectionScanSolveLearn .Right {
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .SectionScanSolveLearn .Right p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .SectionScanSolveLearn .Right p.Big {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: bold;
+    }
+    .SectionScanSolveLearn .Right p.Big.Space {
+        margin-bottom: 48px;
+    }
+    .SectionScanSolveLearn .Right p.Small {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .SectionDownload h2 {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .SectionDownload p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 31px;
+    }
+    .SectionList {
+        display: block;
+    }
+    .SectionPartners {
+        padding: 80px 0px!important;
+    }
+}
+
+/* 860 */
+@media only screen and (max-width:859px) {
+    .Section1 .Content .Stores.Above {
+        margin-top: 127px;
+    }
+    .Section1 .Content p {
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .Section1 .Notebook {
+        margin-bottom: -250px;
+    }
+    .SectionAwards h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .SectionAwards p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 24px;
+    }
+    .Section10 .LeftBlock {
+        width: 100%;
+        float: none;
+    }
+    .Section10 .Tasks,
+    .SingleColumn.Examples .Tasks {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 34px;
+    }
+    .Section10 .Tasks.Big,
+    .SingleColumn.Examples .Tasks.Big {
+        display: none;
+    }
+    .Section10 .Tasks.Small,
+    .SingleColumn.Examples .Tasks.Small {
+        display: block;
+    }
+    div.SingleColumn {
+        padding-top: 127px;
+        padding-bottom: 75px;
+    }
+    div.SingleColumn.Job {
+        padding-top: 0;
+    }
+    div.SingleColumn h2 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: 0;
+    }
+    div.SingleColumn h3 {
+        font-size: 27px;
+        line-height: 32px;
+        margin-top: 30px;
+    }
+    div.SingleColumn.TermsOfUse h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    div.SingleColumn div.Box h2,
+    div.SingleColumn.Job h4#apply {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    div.SingleColumn h4,
+    div.SingleColumn.Job h4,
+    div.SingleColumn div.Box p {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    div.SingleColumn.Job h4 {
+        margin-top: 70px
+    }
+    div.SingleColumn p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    div.SingleColumn.Job p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    div.SingleColumn p.Summary {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    div.SingleColumn p.LastUpdate {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    div.SingleColumn ul.Box li h3 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    div.SingleColumn ul.Box li p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    div.SingleColumn ul.Box li p.Large {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    div.SingleColumn ul.Media li {
+        width: 100%;
+        padding: 12px 12px 30px 12px;
+    }
+    div.SingleColumn.Job ul li,
+    div.SingleColumn.Job ol li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    div.SingleColumn img.Photo {
+        margin-bottom: 20px;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups {
+        margin-top: 0;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li>ul>li {
+        padding: 7px 0;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li>ul>li>a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .HelpSection {
+        padding-top: 127px;
+    }
+    .Footer {
+        padding: 15px 0;
+    }
+    .Footer ul.Links {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    .Footer ul.Links li.LeftItem {
+        text-align: left;
+    }
+    .Footer ul.Links li.RightItem {
+        text-align: right;
+    }
+    .Footer h4 {
+        position: static;
+        float: left;
+    }
+    .Footer ul.Social.Foot {
+        position: static;
+        float: right;
+    }
+    .InfoPage {
+        padding-top: 400px;
+        background-position: left 50% top 127px;
+    }
+    .InfoPage.Confirmed {
+        background-position: left 50% top 200px;
+    }
+    .Section1 {
+        margin-top: 80px;
+    }
+    .Section1 .Notebook {
+        margin-top: 15%;
+    }
+    div.SingleColumn.Grayed h3.NoBlur {
+        padding-top: 0;
+    }
+    .no-send-resume-p,
+    .send-resume {
+        margin-bottom: 0px !important;
+    }
+}
+
+/* max 768px start*/
+@media only screen and (max-width: 768px) {
+    .LangSelectRed {
+        width: 140px;
+        height: 34px;
+        font-size: 16px;
+        background-color: #bf0c34;
+        color: white;
+    }
+    .Social.MobileHead li a {
+        height: 40px;
+        width: 40px;
+    }
+    .Sharpener {
+        text-align: right;
+        height: 17px;
+    }
+    .Sharpener div {
+        width: 54px;
+        margin-top: -15px;
+        margin-right: 5%;
+    }
+    div#WhatElseCanDo>div:nth-of-type(1),
+    div#ParentsTeachers>div:nth-of-type(1) {
+        padding: 0 10px 0 0;
+    }
+    div#WhatElseCanDo>div:nth-of-type(2),
+    div#ParentsTeachers>div:nth-of-type(2) {
+        padding: 0 0 0 10px;
+    }
+    .SectionReviews h2,
+    .SectionParentsTeachers h2,
+    .Section10 h2 {
+        font-size: 27px;
+    }
+    .Section10 {
+        text-align: left;
+    }
+    .Stores li {
+        margin: 0 10px 25px 0;
+    }
+    .SectionPartners {
+        padding: 20px 0!important;
+    }
+    .SectionPartners ul {
+        padding: 0 5%!important;
+    }
+    .SectionPartners ul li {
+        width: 26%!important;
+        height: 70px!important;
+        background-size: 100%!important;
+    }
+    div.cookiebanner {
+        height: 115px!important;
+    }
+    div.cookiebanner span {
+        display: block;
+        font-size: 12px;
+        line-height: 19px;
+        bottom: 45%;
+        left: 5%;
+        width: 90%;
+        text-align: center;
+        right: 5%;
+    }
+    div.cookiebanner div.cookiebanner-close {
+        display: block;
+        padding: 7px!important;
+        font-size: 12px;
+        bottom: 8%;
+        width: 60px;
+        height: 30px;
+        left: 47%;
+    }
+}
+
+/* max 768px end*/
+
+/* 720 */
+@media only screen and (max-width:719px) {
+    .Left {
+        float: none;
+        width: 100%;
+    }
+    .Right {
+        float: none;
+        width: 100%;
+    }
+    .Half {
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    /* .Title { font-size:22px; l.ine-height:30px; } */
+    .Text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .SectionImage {
+        width: 500px;
+        height: 500px;
+    }
+    .Section1 .Content h2 {
+        margin-top: 150px;
+    }
+    .Section1 .Content .Stores.Above {
+        display: none;
+    }
+    .Section1 .Content .Stores.Below {
+        display: block;
+    }
+    .Section1 .Content .Social {
+        display: none;
+    }
+    .Section1 .Notebook {
+        width: 75%;
+        padding-bottom: 100%;
+        clear: both;
+        margin-bottom: -250px;
+    }
+    .Section1 .Content {
+        max-width: 100%;
+        margin-top: 0;
+        padding-right: 5%;
+        clear: both;
+    }
+    .SectionScanSolveLearn {
+        padding: 100px 0 75px 0;
+    }
+    .Section3 {
+        padding: 50px 0 100px 0;
+    }
+    .SectionStepByStep {
+        padding: 50px 0 100px 0;
+    }
+    .SectionStepByStep .Left p {
+        margin-top: 24px;
+    }
+    .Section5 {
+        padding: 50px 0 100px 0;
+    }
+    .Section5 .Right p {
+        margin-top: 24px;
+    }
+    .Section6 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .SectionReviews {
+        padding: 100px 5% 54px 5%;
+    }
+    .SectionReviews h2 {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 54px;
+    }
+    .SectionReviews .ReviewSlider {
+        max-width: 100%;
+    }
+    .SectionParentsTeachers {
+        padding: 100px 5% 50px 5%;
+    }
+    .SectionParentsTeachers h2 {
+        font-size: 27px;
+        line-height: 32px;
+        margin-bottom: 54px;
+    }
+    .SectionParentsTeachers h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .SectionParentsTeachers h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .SectionParentsTeachers p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .SectionParentsTeachers .Half {
+        width: 100%;
+        margin-bottom: 54px;
+    }
+    .SectionAwards {
+        padding: 100px 0;
+    }
+    .SectionAwards .Right {
+        margin-bottom: 43px;
+    }
+    .SectionAwards ul li {
+        margin-bottom: 43px;
+    }
+    .SectionAwards ul li.TechCrunchDisrupt a {
+        width: 186px;
+        height: 55px;
+    }
+    .SectionAwards ul li.FourYFN a {
+        width: 186px;
+        height: 58px;
+    }
+    .SectionAwards ul li.NetExplo a {
+        width: 185px;
+        height: 43px;
+    }
+    .Section10 {
+        padding: 100px 5%;
+        text-align: left;
+    }
+    .Section10 h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .Section10 p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .Section10 a.Arrow {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .Section10 .Tasks.Small,
+    .SingleColumn.Examples .Tasks.Small {
+        width: 249px;
+        height: 334px;
+    }
+    .Section10 .TopLink {
+        margin-bottom: 60px;
+    }
+    div.SingleColumn.Examples {
+        text-align: center;
+        margin: 0;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups {
+        float: none;
+        width: auto;
+        margin: 0 auto 50px auto;
+        display: inline-block;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li {
+        float: none;
+        width: auto;
+    }
+    .SectionDownload {
+        padding-top: 75%;
+        padding-bottom: 80px;
+        background-size: 100%;
+        background-position: right top;
+    }
+    .SectionDownload .Content {
+        width: 100%;
+        float: none;
+    }
+    .Line {
+        display: block;
+    }
+    .Footer {
+        border: none;
+        margin: 0 5%
+    }
+    .InfoPage h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .InfoPage p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .InfoPage p.Pin {
+        font-size: 40px;
+        line-height: 48px;
+        color: #0da2cc;
+    }
+}
+
+/* 640 */
+@media only screen and (max-width:639px) {
+    .SectionImage {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* 530 */
+@media only screen and (max-width:529px) {
+    .SectionImage {
+        width: 350px;
+        height: 350px;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        height: auto;
+    }
+    .SectionReviews .ReviewSlider div.Slide h3 {
+        max-width: 100%;
+        float: none;
+    }
+    .SectionReviews .ReviewSlider div.Slide p.DateName {
+        float: left;
+        display: inline-block;
+    }
+    .SectionReviews .ReviewSlider div.Slide p.Name {
+        clear: none;
+    }
+    div.SingleColumn ul.Media li p a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .SectionPartners ul li {
+        width: 33%!important;
+        height: 60px!important;
+    }
+}
+
+/* 450 */
+@media only screen and (max-width:449px) {
+    .SectionImage {
+        width: 300px;
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 465px) {
+    div.cookiebanner {
+        height: 151px!important;
+    }
+    div.cookiebanner span {
+        bottom: 40%;
+    }
+    div.cookiebanner div.cookiebanner-close {
+        left: 44%;
+    }
+}
+
+/* max 425px start */
+@media only screen and (max-width: 425px) {
+    .MobileMenu ul li.Large a {
+        font-size: 22px;
+    }
+    .MobileMenu ul li.Small a {
+        font-size: 16px;
+    }
+    .Social.MobileHead li a {
+        height: 30px;
+        width: 30px;
+    }
+    .SectionParentsTeachers .Left .Image {
+        background-image: url("/i/homepage/PARENTS_web.png");
+        height: 160px;
+        width: 160px;
+    }
+    .SectionParentsTeachers .Right .Image {
+        background-image: url("/i/homepage/TEACHER_web.png");
+        height: 160px;
+        width: 160px;
+    }
+    div.cookiebanner {
+        height: 140px!important;
+    }
+    div.cookiebanner span {
+        bottom: 40%;
+        font-size: 12px;
+    }
+    div.cookiebanner div.cookiebanner-close {
+        left: 42%;
+    }
+}
+
+/* max 425px end */
+
+/* max 375px start*/
+@media only screen and (max-width: 375px) {
+    .Section1 .Content h2 {
+        font-size: 27px!important;
+        margin-top: 190px;
+        line-height: 32px!important;
+    }
+    .SectionScanSolveLearn {
+        padding: 75px 0;
+    }
+    .Half {
+        padding: 0px;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        min-height: 577px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 15px;
+    }
+    div#WhatElseCanDo>div:nth-of-type(1),
+    div#ParentsTeachers>div:nth-of-type(1) {
+        padding: 0px;
+    }
+    div#WhatElseCanDo>div:nth-of-type(2),
+    div#ParentsTeachers>div:nth-of-type(2) {
+        padding: 0px;
+    }
+    div.cookiebanner {
+        height: 160px!important;
+    }
+    div.cookiebanner span {
+        bottom: 37%;
+    }
+}
+
+/* max 375px end*/
+
+/* 360 */
+@media only screen and (max-width:359px) {
+    .SectionImage {
+        width: 250px;
+        height: 250px;
+    }
+    /*.Stores { display: block; margin:-15px; text-align: center;}*/
+    .Section1 {
+        padding-bottom: 25px;
+    }
+    .Section1 .Content p {
+        margin-bottom: 30px;
+    }
+    .Section1 .Notebook {
+        margin-bottom: -180px;
+    }
+    .Section1 .Content h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .SectionScanSolveLearn .Right p.Big {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .Section6 h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .Section6 h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    div.SingleColumn ul.Media li p a {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li {
+        padding-bottom: 50px;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li>ul>li {
+        padding: 5px 0;
+    }
+    div.SingleColumn.Examples ul.ExampleGroups>li>ul>li>a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* exception! */
+@media only screen and (max-width: 335px) {
+    .Stores {
+        display: block;
+        margin: -15px;
+        text-align: center;
+    }
+}
+
+/* max 320px start*/
+@media only screen and (max-width: 320px) {
+    .Stores li {
+        margin: 0 0px 25px 0;
+    }
+    .Stores li.AppStore {
+        background-size: 130px;
+    }
+    .Stores li.GooglePlay {
+        background-size: 143px;
+    }
+    .SectionReviews .ReviewSlider div.Slide {
+        min-height: 601px;
+    }
+}
+
+/* max 320px end */
+
+/* Job application form */
+.Box.job-application--box {
+    max-width: 500px;
+    margin: auto !important;
+}
+.job-application {
+    padding: calc(10px+55 * ((100vw - 320px) / 1600)) calc(10px+95 * ((100vw - 320px) / 1600));
+    position: relative;
+}
+.application-form--thank-you {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255,
+    255,
+    255,
+    .95);
+    z-index: 999;
+}
+.application-form--thank-you.failed {
+    background-color: rgba(255,
+    248,
+    250,
+    .94);
+}
+.job-application--item {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.job-application--label {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%;
+}
+.job-application--item input,
+.job-application .add-document {
+    border: 1px solid transparent;
+    border-radius: 40px;
+    box-sizing: border-box;
+    font-size: 19px;
+    padding: 13px 51px;
+    max-width: 500px;
+    width: 100%;
+    outline: none;
+}
+.job-application--item input {
+    background: #eaeaea;
+}
+.job-application--item input:active,
+.job-application--item input:focus {
+    border: 1px solid #7F7F7F;
+}
+.job-application .add-document {
+    border: 1px dashed #ABABAB;
+    cursor: pointer;
+    transition: .2s linear;
+    text-align: center;
+    position: relative;
+}
+.job-application .add-document:hover,
+.job-application .add-document.file-added {
+    border-color: #87C540;
+    background: #f4ffe7;
+}
+.job-application--item img,
+.job-application--item span {
+    vertical-align: middle;
+}
+.job-application--submit {
+    margin-top: 50px;
+    text-align: center;
+}
+.job-application--submit input {
+    background: #bf0d35;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 13px 41px;
+    cursor: pointer;
+}
+.upload-doc {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    opacity: 0;
+}
+.remove-file {
+    opacity: 0;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 99;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .2s linear;
+    transform: rotate(45deg);
+}
+.remove-file:hover {
+    background-color: #bf0d35;
+}
+.remove-file:hover img {
+    filter: invert(1);
+}
+.add-document.file-added img {
+    opacity: 0;
+    transition: .2s linear;
+}
+.remove-active.remove-file {
+    opacity: 1;
+}
+.hide-visually {
+    position: absolute !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+}
+@media only screen and (max-width: 768px) {
+    .job-application--item {
+        flex-direction: column;
+    }
+    video#acp-video {
+        width: 100%;
+    }
+    img#play-acp-video {
+        width: 40px !important;
+    }
+}
+.acp-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+img#play-acp-video {
+    position: absolute;
+    width: 80px;
+}
+#acp-video.hovered+#play-acp-video {
+    opacity: 1;
+}
+#acp-video+#play-acp-video {
+    opacity: 0;
+    transition: .2s linear;
+}
